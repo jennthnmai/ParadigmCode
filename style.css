@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+    
+body {
+/*     background:#808080; */
+  background: black;
+  
+    height:7600px;
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+#content {
+    position:fixed; 
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  background-image: url("https://cdn.discordapp.com/attachments/670338958512750606/683133767761788929/pixil-frame-0_29.png");
+/*   background-image: url("https://cdn.discordapp.com/attachments/670338958512750606/683133769053503500/pixil-frame-0_28.png");
+background-image:   url("https://cdn.discordapp.com/attachments/670338958512750606/683133769053503500/pixil-frame-0_28.png"); */
+    /* if smaller content box is used and centering is needed: 
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    */
+/*     border: 2px dashed red; */
+}
+#viewport {
+    -webkit-perspective:500px;
+    -moz-perspective:500px;
+    -webkit-perspective-origin:50% 50%;
+    -moz-perspective-origin:50% 50%;
+    -moz-transform-style: preserve-3d;
+    width:100%;
+    height:100%;
+}
+
+#instructions-overlay{
+    position: fixed;
+    width:100%;
+    height:100%;
+    z-index: -1;
+    background: rgba(0,0,0,.5);
+}
+    
+.frame{
+    position:absolute;
+    width:100%;
+    height:100%;
+    -moz-transform-style: preserve-3d;
+}
+.frame.text {
+    text-align:center;
+    -moz-transform-style: preserve-3d;
+}
+.frame.image {
+    text-align:center;
+}
+.frame.text h1 {
+    color:white;
+    padding:2em;
+}
+.frame.text h2 {
+    color:white;
+    padding:2em;
+}
+.frame.text p {
+    color:white;
+    padding:2em;
+}
+.frame.box {
+    border-radius:.5em;
+    background-color:white;
+    background: 
+    padding:2em;
+}
+
+#space-background1{
+    position:fixed; 
+    top:5;
+    left:5;
+    width:100%;
+    height:100%;
+  
+}
+
+#space-background2{
+    position:fixed; 
+    top:10;
+    left:10;
+    width:100%;
+    height:100%;
+}
